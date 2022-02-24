@@ -28,7 +28,7 @@ CREATE TABLE `airlines` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `aname` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `airlines` (
 
 LOCK TABLES `airlines` WRITE;
 /*!40000 ALTER TABLE `airlines` DISABLE KEYS */;
+INSERT INTO `airlines` VALUES (8,'Lufthansa'),(9,'Air Canada'),(10,'LowBudjetAirlines');
 /*!40000 ALTER TABLE `airlines` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-24 19:19:41
+-- Dump completed on 2022-02-24 22:35:06

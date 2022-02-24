@@ -31,7 +31,7 @@ CREATE TABLE `flights` (
   `airlineId` int(11) NOT NULL,
   `price` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `flights` (
 
 LOCK TABLES `flights` WRITE;
 /*!40000 ALTER TABLE `flights` DISABLE KEYS */;
+INSERT INTO `flights` VALUES (1,2,4,8,39),(2,4,5,9,299);
 /*!40000 ALTER TABLE `flights` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-24 19:19:40
+-- Dump completed on 2022-02-24 22:35:05

@@ -16,6 +16,42 @@
   	<description></description>
   	<servlet-class>com.flyaway.servlet.AdminPasswordServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ListAirlinesServlet</servlet-name>
+  	<display-name>ListAirlinesServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.ListAirlinesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AirlineActionServlet</servlet-name>
+  	<display-name>AirlineActionServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.AirlineActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListPlacesServlet</servlet-name>
+  	<display-name>ListPlacesServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.ListPlacesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PlaceActionServlet</servlet-name>
+  	<display-name>PlaceActionServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.PlaceActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListFlightsServlet</servlet-name>
+  	<display-name>ListFlightsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.ListFlightsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FlightActionServlet</servlet-name>
+  	<display-name>FlightActionServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.FlightActionServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>AdminLoginServlet</servlet-name>
   	<url-pattern>/AdminLoginServlet</url-pattern>
@@ -23,5 +59,29 @@
   <servlet-mapping>
   	<servlet-name>AdminPasswordServlet</servlet-name>
   	<url-pattern>/AdminPasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListAirlinesServlet</servlet-name>
+  	<url-pattern>/ListAirlinesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AirlineActionServlet</servlet-name>
+  	<url-pattern>/AirlineActionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListPlacesServlet</servlet-name>
+  	<url-pattern>/ListPlacesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PlaceActionServlet</servlet-name>
+  	<url-pattern>/PlaceActionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListFlightsServlet</servlet-name>
+  	<url-pattern>/ListFlightsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FlightActionServlet</servlet-name>
+  	<url-pattern>/FlightActionServlet</url-pattern>
   </servlet-mapping>
 </web-app>
