@@ -52,6 +52,30 @@
   	<description></description>
   	<servlet-class>com.flyaway.servlet.FlightActionServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>EnterFlightdataServlet</servlet-name>
+  	<display-name>EnterFlightdataServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.EnterFlightdataServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>bookStepTwoServlet</servlet-name>
+  	<display-name>bookStepTwoServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.bookStepTwoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookStepThreeServlet</servlet-name>
+  	<display-name>BookStepThreeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.BookStepThreeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookLastStepServlet</servlet-name>
+  	<display-name>BookLastStepServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.flyaway.servlet.BookLastStepServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>AdminLoginServlet</servlet-name>
   	<url-pattern>/AdminLoginServlet</url-pattern>
@@ -83,5 +107,21 @@
   <servlet-mapping>
   	<servlet-name>FlightActionServlet</servlet-name>
   	<url-pattern>/FlightActionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EnterFlightdataServlet</servlet-name>
+  	<url-pattern>/EnterFlightdataServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>bookStepTwoServlet</servlet-name>
+  	<url-pattern>/bookStepTwoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookStepThreeServlet</servlet-name>
+  	<url-pattern>/BookStepThreeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookLastStepServlet</servlet-name>
+  	<url-pattern>/BookLastStepServlet</url-pattern>
   </servlet-mapping>
 </web-app>

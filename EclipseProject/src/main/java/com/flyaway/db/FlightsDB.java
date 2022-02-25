@@ -9,6 +9,41 @@ import java.util.List;
 import com.flyaway.model.Flight;
 
 public class FlightsDB {
+	public List<Flight> getAllFlightsBySourceIdAndDestinationId(int sourceId, int destinationId)
+	{
+		List<Flight> flights = new ArrayList<Flight>();
+		Connection con = MySQLConnection.getConnection();
+		String sql = "select id, sourceId, destinationId, airlineId, price from flights where sourceId = ? and destinationId = ?";
+		try {
+			PreparedStatement st = con.prepareStatement(sql);
+			st.setInt(1, sourceId);
+			st.setInt(2, destinationId);
+			ResultSet rs = st.executeQuery();
+			while(rs.next())
+			{
+				Flight flight = new Flight();
+				flight.setId(rs.getInt(1));
+				flight.setSourceId(rs.getInt(2));
+				flight.setDestinationId(rs.getInt(3));
+				flight.setAirlineId(rs.getInt(4));
+				flight.setPrice(rs.getDouble(5));
+				flights.add(flight);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return flights;
+	}
+	
 	public List<Flight> getAllFlights()
 	{
 		List<Flight> flights = new ArrayList<Flight>();

@@ -26,6 +26,7 @@ public class Flight {
 	public int getSourceId() {
 		return sourceId;
 	}
+
 	public void setSourceId(int sourceId) {
 		this.sourceId = sourceId;
 	}
